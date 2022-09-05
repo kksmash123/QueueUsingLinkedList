@@ -84,10 +84,8 @@ bool IsFull()
 {
 	struct Node* temp = new Node;
 	if (temp == NULL)
-	{
-		delete temp;
 		return 1;
-	}
+	delete temp;
 	return 0;
 }
 
